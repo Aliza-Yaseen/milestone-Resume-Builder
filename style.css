@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+}
+.x-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.x-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class^='x-col-'] {
+    padding: 15px;
+    position: relative;
+}
+
+.x-col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+}
+
+.x-col-6 {
+    width: 60%;
+    flex: 0 0 60%;
+}
+
+.x-col-4 {
+    width: 25%;
+    flex: 0 0 25%;
+}
+.frontpage{
+    background-color: rgba(0, 0, 0, 0.776);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.front-page-heading{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.front-page-heading h1{
+    font-size: 23px;
+    margin: 15px 0;
+}
+.front-page-heading span, .front-page-content span{
+    color:silver;
+
+}
+.front-page-content{
+    margin: 20px 0;
+    width: 70%;
+    padding: 15px 10px;
+    position: relative;
+    left: 10%;
+}
+.front-page-content p{
+    font-size: 17px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.front-page-content a{
+    color: whitesmoke;
+    font-size: 14px;
+}
+.button{
+    position: relative;
+    /* left: 5%; */
+    margin-left: 11%;
+}
+.button button{
+    padding: 14px 21px;
+    background-color:rgba(0, 0, 0, 0.429);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border: 3px solid white;
+}
+.button button:hover{
+    color:black ;
+    background-color:white;
+    transition: all .3s;
+    cursor: pointer;
+    /* border: 3px solid black; */
+}
+
+/* Builder page css */
+.builder{
+    background-color: whitesmoke;
+    color: black;
+}
+.blank{
+    height: 2.5px;
+    width: 5%;
+    background-color: black;
+    border-radius: 2px;
+}
+.builder-heading{
+    display: flex;
+    /* justify-content: space-; */
+    align-items: center;
+    /* flex-direction: column; */
+}
+.builder-heading h1{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 22px;
+    color: black;
+}
+
+/* text moving */
+h3{
+    position: relative;
+}
+h3::after{
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: black;
+    background-color: whitesmoke;
+    width: 100%;
+    animation: writing 13s ease-in forwards, blink 1s infinite;
+}
+@keyframes writing {
+    to{
+        width: 0%;
+    }
+}
+@keyframes blink{
+    40%{
+        color: transparent;
+    }
+}
+.box{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 50px;
+    color: black;
+}

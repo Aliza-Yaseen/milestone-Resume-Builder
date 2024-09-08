@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Resume Maker</title>
+</head>
+<body>
+
+    <section class="builder">
+        <div class="inner">
+            <div class="x-container">
+                <div class="x-row">
+                    <div class="x-col-12">
+                        <div class="builder-heading">
+                            <h1>Here we go <br>
+                                Resume Builder
+                            </h1>
+                            <!-- <h1>Resume Builder</h1> -->
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- js code -->
+                <div class="x-row">
+                    <div class="x-col-12">
+                        <div class="box">
+
+                            <script>
+                                let a = prompt ("Enter your name: ");
+                                let b = prompt ("Enter your Address: ");
+                                let c = prompt ("Enter your Phone Number: ");
+                                let pt = parseInt(c)
+                                let d = prompt ("Enter your email id: ");
+                                let uni = prompt ("Enter your University name: ");
+
+                               document.write("<h3> Myself: </h3>" + a);
+                               document.write("<br>");
+                               document.write("<br>");
+
+
+                               document.write("<h3> Address: </h3>" + b);
+                               document.write("<br>");
+                               document.write("<br>");
+
+                               document.write("<h3> Phone Number: </h3>" + pt);
+                               document.write("<br>");
+                               document.write("<br>");
+
+                               document.write("<h3> Email Id: </h3>" + d);
+                               document.write("<br>");
+                               document.write("<br>");
+
+                               document.write("<h3> Objective: </h3>" +d);
+                               document.write("<h3> To obtain a challenging web development role that utilizes my skills in HTML, CSS, and JavaScript to build dynamic and responsive web applications. Seeking to leverage my creativity and problem-solving abilities to deliver high-quality solutions. Eager to collaborate with cross-functional teams and stay updated with industry trends. Committed to continuous learning and professional growth. Focused on delivering exceptional user experiences through innovative web development. </h3>");
+                               document.write("<br>");
+                               document.write("<br>");
+
+                               document.write("<h3> Education: </h3>" +d);
+                               document.write("<h3> Web3 engineering and metaverse development require a strong foundation in computer science, programming languages, and blockchain technology.  </h3>");
+                               document.write("<br>");
+                               document.write("<br>");
+
+                               let choice = prompt ("1) TypeScript, 2)JavaScript, 3)HTML CSS");
+
+                               if( choice == 1){
+                                document.write("<h3> TypeScript (TS) Developer: </h3>" +d);
+                                document.write("<br>");
+                                document.write("<h3>   Skilled TypeScript developer building scalable, maintainable applications with advanced type safety features. </h3>" );
+                                document.write("<br>");
+                               }
+
+                               else if( choice == 2){
+                                document.write("<h3> JavaScript (JS) Developer: </h3>" );
+                                document.write("<br>");
+                                document.write("<h3> Passionate JavaScript developer creating dynamic web experiences with modern frameworks and libraries. </h3>" );
+                                document.write("<br>");
+
+                               }
+
+                              else if( choice == 3){
+                                document.write("<h3> Hands On HTML CSS: </h3>" +d);
+                                document.write("<br>");
+                                document.write("<h3>Highly skilled HTML/CSS developer  crafting visually stunning and responsive web applications. Proficient in writing clean, semantic, and standards-compliant code. Profound understanding of web design principles, user experience, and browser compatibility. </h3>" );
+                                document.write("<br>");
+                               }else{
+                               alert ("Choice Invalid!");
+                               }
+
+
+                            //    freelancing/webdevelopment
+
+                            let choice4 = prompt("1)Free Lancing, 2)Web Development");
+                            if( choice4 == 1){
+                                document.write("<h3> Free Lancing: </h3>" +d);
+                                document.write("<h3>Freelance web developer with a passion for delivering high-quality solutions. Experienced in working with diverse clients and projects. Skilled in communication, time management, and adaptability.Proven track record of meeting deadlines and exceeding expectations. Dedicated to continuous learning and improvement.</h3>");
+                               }
+
+                               else if( choice4 == 2){
+                                document.write("<h3> Web Development: </h3>" +d);
+                                document.write("<br>");
+                                document.write("<h3> Highly skilled web developer with expertise in HTML, CSS, and JavaScript. Proficient in building responsive, user-friendly, and scalable web applications. Experienced in working with modern frameworks and libraries. Strong understanding of web design principles and user experience. Committed to writing clean, efficient, and well-documented code. </h3>");
+                               }
+
+                              else{
+                                alert("Choice Invalid!");
+                              }
+
+                              let prov = prompt("Enter Your Other Languages in which you're Skilled: ");
+                              document.write("<h3>Languages  </h3>" + prov);
+                              document.write("<br>");
+                              document.write("<br>");
+
+
+                              let prove = prompt("Enter Projects name: ");
+                              document.write("<h3>Projects :</h3>" + prove);
+                              document.write("<br>");
+                              document.write("<br>");
+
+                              
+                              document.write("<h3>Available upon request, Thanks for Reviewing my Resume!</h3>");
+                              document.write("<br>");
+                              document.write("<br>");
+
+                            </script>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
